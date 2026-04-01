@@ -9,3 +9,46 @@ body {
   background-color: black;
   color: white;
 }
+
+/* Começo do Header */
+
+header {
+  background-color: rgb(0, 0, 0, 0.8);
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Logo*/
+    .logo{
+      height: 100px;
+      filter: drop-shadow(0 0 8px cyan);
+      transition: 0.3s;
+    }
+    .logo:hover{
+      filter: drop-shadow(0 0 15px magenta);
+      transform: scale(1.1);
+    }
+
+    /*Menu de Navegação*/
+    ul{
+      display: flex;
+      list-style: none;
+      li{
+        margin-left: 20px;
+        a{
+          text-decoration: none;
+          color: cyan;
+          font-size: 18px;
+          padding: 10px 15px;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+}
