@@ -46,7 +46,12 @@ header {
           color: cyan;
           font-size: 18px;
           padding: 10px 15px;
+          filter: drop-shadow(0 0 8px cyan);
           transition: 0.3s;
+        }
+        a:hover{
+          transform: scale(1.5);
+          color: magenta;
         }
       }
     }
