@@ -14,7 +14,7 @@ body {
 /* Começo do Header */
 
 header {
-  background-color: rgba(24, 9, 63, 0.912);
+  background-color: rgb(24, 9, 63, 0.912);
   padding: 15px;
   position: static;
   width: 100%;
@@ -130,6 +130,7 @@ header {
     text-align: center;
   }
 }
+/*Hero finalizado*/
 
 /* BOTÃO */
 .btn {
@@ -149,4 +150,32 @@ header {
   background: magenta;
   color: white;
   box-shadow: 0 0 15px magenta;
+}
+/*Botão finalizado*/
+
+/* SEÇÕES */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+/* FEATURES */
+.features {
+  background: rgb(24, 9, 63, 0.912);
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 0 120px 0 120px;
+}
+
+.features div {
+  background: rgba(255,255,255,0.05);
+  padding: 15px;
+  border: 1px solid cyan;
 }
