@@ -33,6 +33,7 @@ header {
       filter: drop-shadow(0 0 8px cyan);
       transition: 0.3s;
       margin: 0 20px 0 100px;
+      margin-left: 150px;
     }
 
     .logo:hover {
@@ -66,11 +67,30 @@ header {
       }
     }
   }
+  .btn-header {
+  background: linear-gradient(45deg, cyan, magenta);
+  color: cyan;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+  box-shadow: 0 0 10px cyan;
+  margin-right: 150px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  }
+  .btn-header:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px magenta;
+  color: white;
+  } 
 }
 
 /* Fim do Header */
 
-/* Começo da Seção Hero */
+/* Começo da Seção Home */
 .home {
   height: 100vh;
   display: flex;
