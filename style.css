@@ -71,13 +71,16 @@ header {
 /* Fim do Header */
 
 /* Começo da Seção Hero */
-.hero {
+.home {
   height: 100vh;
   display: flex;
-  margin-top: 80px;
+  margin-top: 0;
+  background-image: url(Img/Fundo.png);
+  background-size: cover;
+
 }
 
-.hero-imagem {
+.home-imagem {
   width: 50%;
   display: flex;
   align-items: center;
@@ -87,20 +90,20 @@ header {
   margin: 0 20px 0 60px;
 }
 
-.hero-imagem img {
+.home-imagem img {
   width: 100%;
-  max-width: 500px;
+  max-width: 420px;
   border-radius: 30px;
   /* borda arredondada */
-  box-shadow: 0 0 50px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.2);
   /* brilho suave */
 }
 
-.hero-imagem img:hover {
+.home-imagem img:hover {
   transform: scale(1.03);
 }
 
-.hero-texto {
+.home-texto {
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -108,26 +111,29 @@ header {
   padding: 60px;
  
   border-radius: 10px;
-  margin: 0 60px 0 20px;
+  margin: 0 89px 0 20px;
+  
 
   h2 {
     font-size: 60px;
-    color: cyan;
-    text-shadow: 0 0 10px cyan;
+    color: magenta;
+    text-shadow: 0 0 10px magenta;
     animation: glitch 1s infinite;
     text-align: center;
     margin: 15px 0;
   }
 
   h2:hover {
-    color: magenta;
-    text-shadow: 0 0 15px magenta;
+    color: cyan;
+    text-shadow: 0 0 15px cyan
   }
 
   p {
     margin: 20px 0;
     font-size: 25px;
     text-align: center;
+    font-weight: bold;
+    color: white;
   }
 }
 /*Hero finalizado*/
