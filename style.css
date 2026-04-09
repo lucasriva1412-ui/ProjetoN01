@@ -8,7 +8,7 @@
 body {
   background-color: rgb(24, 9, 63, 0.912);
   color: white;
-  
+
 }
 
 /* Começo do Header */
@@ -25,7 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
 
     /*Logo*/
     .logo {
@@ -57,7 +57,7 @@ header {
           filter: drop-shadow(0 0 8px cyan);
           transition: 0.3s;
           margin-right: 60px;
-          
+
         }
 
         a:hover {
@@ -67,25 +67,27 @@ header {
       }
     }
   }
+
   .btn-header {
-  background: linear-gradient(45deg, cyan, magenta);
-  color: cyan;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 25px;
-  border-radius: 8px;
-  transition: 0.3s;
-  box-shadow: 0 0 10px cyan;
-  margin-right: 150px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+    background: linear-gradient(45deg, cyan, magenta);
+    color: cyan;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px cyan;
+    margin-right: 150px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
+
   .btn-header:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px magenta;
-  color: white;
-  } 
+    transform: scale(1.05);
+    box-shadow: 0 0 20px magenta;
+    color: white;
+  }
 }
 
 /* Fim do Header */
@@ -129,10 +131,10 @@ header {
   flex-direction: column;
   justify-content: center;
   padding: 60px;
- 
+
   border-radius: 10px;
   margin: 0 89px 0 20px;
-  
+
 
   h2 {
     font-size: 60px;
@@ -156,6 +158,7 @@ header {
     color: white;
   }
 }
+
 /*Hero finalizado*/
 
 /* BOTÃO */
@@ -177,31 +180,102 @@ header {
   color: white;
   box-shadow: 0 0 15px magenta;
 }
+
 /*Botão finalizado*/
 
-/* SEÇÕES */
-.section {
-  padding: 100px 20px;
+/* Sobre */
+
+.sobre {
+  background: linear-gradient(180deg, #0b0f1a, #111827);
+}
+
+.sobre-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.sobre-texto {
+  width: 40%;
+  text-align: center  ;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px;
+  border-radius: 20px;
+  border: 1px solid rgba(0, 255, 255, 0.3); 
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  
+  margin-left: 180px;
+  
+}
+
+.btn-sobre {
+  padding: 12px 25px;
+  background: cyan;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: fit-content;
+  margin-top: auto;
+  font-size: 30px;
+  align-items: center;
+  
+}
+
+.btn-sobre:hover{
+  background: magenta;
+  color: white;
+  box-shadow: 0 0 15px magenta;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 25px;
   text-align: center;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px
+
 }
 
-.section h2 {
-  margin-bottom: 20px;
+h2 {
+  font-size: 60px;
+  color: magenta;
+  text-shadow: 0 0 10px magenta;
+  animation: glitch 1s infinite;
+  text-align: center;
+  margin: 15px 0;
+  margin-top: 20px
+}
+
+h2:hover {
   color: cyan;
+  text-shadow: 0 0 15px cyan
 }
 
-/* FEATURES */
-.features {
-  background: rgb(24, 9, 63, 0.912);
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin: 0 120px 0 120px;
-}
+.sobre-imagem {
+  width: 50%;
+  display: flex;
+  justify-content: center;
 
-.features div {
-  background: rgba(255,255,255,0.05);
-  padding: 15px;
-  border: 1px solid cyan;
+  img {
+    width: 80%;
+    max-width: 350px;
+    border-radius: 20px;
+    box-shadow:
+      0 0 20px cyan,
+      0 0 40px rgba(255, 0, 255, 0.3);
+    transition: 0.3s;
+    margin-right: 180px;
+
+
+  }
+
+  img:hover {
+    transform: scale(1.05);
+  }
 }
