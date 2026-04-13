@@ -423,3 +423,101 @@ div.ranking-players {
   pointer-events: none; /* impede clique */
   user-select: none;
 }
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 900px) {
+
+  /* HEADER */
+  header nav {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .btn-header {
+    margin: 0;
+  }
+
+  /* HOME */
+  .home {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .home-imagem,
+  .home-texto {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .home-texto h2 {
+    font-size: 40px;
+  }
+
+  .home-texto p {
+    font-size: 20px;
+  }
+
+  /* LORE */
+  .LORE-container {
+    flex-direction: column;
+  }
+
+  .LORE-texto,
+  .LORE-imagem {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .LORE-imagem img {
+    width: 100%;
+  }
+
+  /* RANKING */
+  .ranking-container {
+    flex-direction: column;
+  }
+
+  .ranking-img,
+  .ranking-players {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .ranking-img img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .footer-Nome h2,
+  .footer-contato p {
+    margin: 0;
+  }
+}
