@@ -6,7 +6,7 @@
 
   if (idade < 12) {
     document.getElementById("site-content").classList.add("blur");
-    alert("Conteúdo bloqueado para menores de 12 anos.");
+    console.log("Conteúdo bloqueado para menores de 12 anos.");
   } else {
-    alert("Bem-vindo, " + nome + "!");
+    console.log("Bem-vindo, " + nome + "!");
   }
